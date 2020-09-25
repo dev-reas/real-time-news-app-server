@@ -21,9 +21,9 @@ class UserSeeder extends Seeder
         ]);
 
         $user->profile()->create([
-            'name'           => 'Bulutoy',
-            'designation'    => 'Antipolo',
-            'profile_pic'    =>  'https://ca-times.brightspotcdn.com/dims4/default/31d48c6/2147483647/strip/true/crop/2974x1983+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe1%2F30%2Fc8e3355d4140a27c41ebdcd9b3df%2Fvirus-outbreak-trump-82232.jpg'
+            'name'           => 'Brybrybry',
+            'designation'    => 'Engineer/IT Specialist',
+            'profile_pic'    =>  'https://media.discordapp.net/attachments/723983709404921927/736217611485970452/bry.jpg?width=427&height=427'
         ]);
 
         $user2 = User::create([
@@ -35,9 +35,37 @@ class UserSeeder extends Seeder
         ]);
 
         $user2->profile()->create([
-            'name'           => 'Black Mamba',
-            'designation'    => 'Manil',
-            'profile_pic'    =>  'https://ca-times.brightspotcdn.com/dims4/default/31d48c6/2147483647/strip/true/crop/2974x1983+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe1%2F30%2Fc8e3355d4140a27c41ebdcd9b3df%2Fvirus-outbreak-trump-82232.jpg'
+            'name'           => 'reasagun',
+            'designation'    => 'System Developer',
+            'profile_pic'    =>  'https://media.discordapp.net/attachments/723983709404921927/736217611813257366/gor.jpg?width=432&height=427'
+        ]);
+
+        $user3 = User::create([
+            'first_name'    => 'Lemuel',
+            'middle_name'   => 'John',
+            'last_name'     => 'Ami',
+            'email'         => 'lemuel@gmail.com',
+            'password'      => bcrypt('password')
+        ]);
+
+        $user3->profile()->create([
+            'name'           => 'Engr. Bok-dev',
+            'designation'    => 'Hardware specialist',
+            'profile_pic'    =>  'https://media.discordapp.net/attachments/723983709404921927/736217608331853915/lem.jpg?width=427&height=427'
+        ]);
+
+        $user4 = User::create([
+            'first_name'    => 'Jeraldine',
+            'middle_name'   => 'Z',
+            'last_name'     => 'Cagatin',
+            'email'         => 'jaks@gmail.com',
+            'password'      => bcrypt('password')
+        ]);
+
+        $user4->profile()->create([
+            'name'           => 'Jenbytes',
+            'designation'    => 'UI/UX developer',
+            'profile_pic'    =>  'https://media.discordapp.net/attachments/723983709404921927/736217614216331294/Jaks.jpg'
         ]);
     }
 }
