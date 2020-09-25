@@ -78,7 +78,7 @@ class userpageController extends Controller
             'profile_pic'   =>  'required',
         ]);
 
-        $profiles               = new Profile;
+        $profiles = Profile::find($user_id);
         $profiles->name         = $request->input('name');
         $profiles->user_id      = auth()->guard('api')->user()->id;
         $profiles->designation  = $request->input('designation');
@@ -98,8 +98,6 @@ class userpageController extends Controller
             'profile_pic'  => $profiles->profile_pic
         );
         
-        Profile::where('id', $user_id)->update($data);
-        $profiles->update();
-        return response('Update Profile Successful');
+        $profiles->save();
     }
 }

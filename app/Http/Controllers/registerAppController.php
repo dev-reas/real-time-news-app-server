@@ -42,7 +42,7 @@ class registerAppController extends Controller
 		$profileUser = $user->profile()->create([
             'name'          => $user->first_name . ' ' . $user->last_name,
             'designation'   => 'Unknown',
-            'profile_pic'   =>  'https://cdn140.picsart.com/252122691022212.png?r1024x1024',
+            'profile_pic'   =>  'https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/84635140_512608259689177_1838351100537733120_n.png?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=DCwPcUmmVSgAX-ef582&_nc_ht=scontent.fmnl17-2.fna&oh=38e2db42915068a9e47fd6ebbf6b68b3&oe=5F93E701',
         ]);
 	
 		if(!is_null($user)) {
